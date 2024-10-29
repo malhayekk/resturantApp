@@ -1,0 +1,148 @@
+/** *** header styling *** **/
+header {
+    background-image: url(background.jpg);
+}
+
+header>h1,
+header>h2 {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    color: white;
+    text-shadow: 1px 1px 2px black
+}
+
+header>h2 {
+    margin-bottom: 1rem;
+}
+
+/** *** menu *** **/
+.menuItem {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    border-bottom: 2px solid lightgray;
+}
+
+.itemDescription {
+    display: flex;
+}
+
+#emoji {
+    font-size: 2rem;
+}
+
+.btnDiv {
+    display: block;
+    width: 1rem;
+    margin: auto 0;
+}
+
+.btnDiv>button {
+    background-color: white;
+    border: none;
+    font-size: xx-large;
+}
+
+div>button:active {
+    /* Scaling button to 0.98 to its original size */
+    transform: scale(0.98);
+}
+
+/** *** order summary *** **/
+
+/** hide hidden classes **/
+.hidden {
+    display: none;
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+}
+
+.orderItem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.orderItem>div {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.orderItem>div>button {
+    color: rgb(22, 27, 82);
+    border: white;
+    background-color: white;
+}
+
+.orderItem>div>button:hover {
+    font-weight: bolder;
+    transform: scale(1.2);
+}
+
+#orderDetails {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid black;
+    ;
+}
+
+#enterCardDetails {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 420px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 2px #666;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-radius: 5px;
+    width: inherit;
+    margin: 1rem 0;
+}
+
+input {
+    font-size: 18px;
+    padding: 0.5rem;
+}
+
+/** hide arrows for number input **/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#enterCardDetails>button {
+    width: inherit;
+    border-radius: 5px;
+    background-color: rgb(22, 27, 82);
+    color: white;
+    padding: 0.5rem;
+    font-weight: bolder;
+}
+
+footer {
+    margin: 1rem;
+}
+
+#completeOrder {
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(22, 27, 82);
+    color: white;
+    padding: 0.5rem;
+    font-weight: bolder;
+}
